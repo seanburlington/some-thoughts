@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Some thoughts</title>
+    <link>http://sean.burlington.me.uk/posts.html</link>
+    <description>Recent content in Posts on Some thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 24 Dec 1968 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sean.burlington.me.uk/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://sean.burlington.me.uk/posts/hello-world.html</link>
+      <pubDate>Tue, 24 Dec 1968 16:00:00 +0000</pubDate>
+      
+      <guid>http://sean.burlington.me.uk/posts/hello-world.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://sean.burlington.me.uk/apollo08_earthrise.jpg&#34; alt=&#34;Earthrise&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo Credit Bill Anders&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
