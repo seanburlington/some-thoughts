@@ -1,49 +1,35 @@
 ---
-title: "Static Site With AWS"
-date: 2019-01-11T20:19:51Z
+title: "AWS CloudFront - limitations"
+date: 2019-01-15T12:19:51Z
 draft: False
 tags:
  - note-to-self
  - how-to
  - AWS
  - S3
+ - headers
+ - security
+ - hugo
 
 
 ---
 
-Getting a site up and running on AWS via S3 is fairly quick and easy. 
+I got this site running on AWS using S3 and CLoudfront, it was all easy enough.
 
-Here is what I did.
+But then a couple of things didn't work how I wanted.
+
+Index pages wern't there, and I couldn't add security headers.
 
 <!--more-->
 
-First Setup an account and configure the AWS CLI tools.
 
- * create aws account
- * create IAM user
- * grant permissions to user
- * copy credentials locally
- * Install PIP `sudo apt install python-pip`
- * use PIP to install the AWS tools `pip install awscli --upgrade --user`
- * `aws configure`  use credentials from above
- * Read the docs at https://docs.aws.amazon.com/cli/latest/index.html
-
-Then setup the S3 side
+It turns out that 
 
 
-https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html
+   CloudFront does allow you to specify a default root object (index.html), but it only works on the root of the website (such as http://www.example.com > http://www.example.com/index.html). It does not work on any subdirectory (such as http://www.example.com/about/). If you were to attempt to request this URL through CloudFront, CloudFront would do a S3 GetObject API call against a key that does not exist.
 
-Create an S3 bucket, configure as a website and make it world readable
+There is a solution
 
-Oddly here Amazon tell you to make it world readable - and warn you that you shoudln't. Ignore the warning.
+[Implementing Default Directory Indexes in Amazon S3-backed Amazon CloudFront Origins Using Lambda@Edge](https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/)
 
-
-
-
-Finally publish to S3
-
-`aws s3 cp ./public/ s3://seanburlington --recursive`
-
-Now visit the site
-
-
+But I decied for now at least to simply 
