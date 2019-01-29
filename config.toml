@@ -19,4 +19,4 @@ uglyurls = true
  # featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 5
   uglyurls = true # this settings is duplicated here so that it is available in templates
-
+  custom_css = ['sean.css']
