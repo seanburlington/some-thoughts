@@ -1,7 +1,7 @@
 ---
 title: "Http Headers Aws Cloudfront Lambda"
 date: 2019-01-29T20:30:47Z
-draft: true
+draft: false
 tags:
  - note-to-self
  - how-to
