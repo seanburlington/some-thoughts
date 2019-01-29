@@ -1,5 +1,5 @@
 ---
-title: "AWS CloudFront - limitations"
+title: "Static Site with AWS"
 date: 2019-01-15T12:19:51Z
 draft: False
 tags:
@@ -14,11 +14,11 @@ tags:
 
 ---
 
-I got this site running on AWS using S3 and CLoudfront, it was all easy enough.
+I got this site running on AWS using S3 and Cloudfront, it was all easy enough.
 
 But then a couple of things didn't work how I wanted.
 
-Index pages wern't there, and I couldn't add security headers.
+Index pages weren't there, and I couldn't add security headers.
 
 <!--more-->
 
@@ -32,4 +32,6 @@ There is a solution
 
 [Implementing Default Directory Indexes in Amazon S3-backed Amazon CloudFront Origins Using Lambda@Edge](https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/)
 
-But I decied for now at least to simply 
+But I decided for now at least to simply use the [Ugly URLs](https://gohugo.io/content-management/urls/#ugly-urls) setting in Hugo to avoid using directory indexes.
+
+I don't find .html on urls to be that ugly and it was a quick way to get things working. The downside is that if I carnage my mind a static site doesn't give an obvious way to add redirects.
