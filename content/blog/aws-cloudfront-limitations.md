@@ -14,7 +14,7 @@ tags:
 
 ---
 
-I got this site running on AWS using S3 and CLoudfront, it was all easy enough.
+I got this site running on AWS using S3 and CloudFront, it was all easy enough.
 
 But then a couple of things didn't work how I wanted.
 
