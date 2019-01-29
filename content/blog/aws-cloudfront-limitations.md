@@ -40,6 +40,6 @@ I'm used to a dymanic CMS where any page can be served on any URL with whatever 
 
 It's all a bit different with a static site where all you have is a set of files, not even an apache style DirectoryIndex directive to work with.
 
-I also want to set headers 
+
 
 

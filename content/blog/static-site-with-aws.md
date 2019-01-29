@@ -1,37 +1,49 @@
 ---
-title: "Static Site with AWS"
-date: 2019-01-15T12:19:51Z
+title: "Static Site With AWS"
+date: 2019-01-11T20:19:51Z
 draft: False
 tags:
  - note-to-self
  - how-to
  - AWS
  - S3
- - headers
- - security
- - hugo
 
 
 ---
 
-I got this site running on AWS using S3 and Cloudfront, it was all easy enough.
+Getting a site up and running on AWS via S3 is fairly quick and easy. 
 
-But then a couple of things didn't work how I wanted.
-
-Index pages weren't there, and I couldn't add security headers.
+Here is what I did.
 
 <!--more-->
 
+First Setup an account and configure the AWS CLI tools.
 
-It turns out that 
+ * create aws account
+ * create IAM user
+ * grant permissions to user
+ * copy credentials locally
+ * Install PIP `sudo apt install python-pip`
+ * use PIP to install the AWS tools `pip install awscli --upgrade --user`
+ * `aws configure`  use credentials from above
+ * Read the docs at https://docs.aws.amazon.com/cli/latest/index.html
+
+Then setup the S3 side
 
 
-   CloudFront does allow you to specify a default root object (index.html), but it only works on the root of the website (such as http://www.example.com > http://www.example.com/index.html). It does not work on any subdirectory (such as http://www.example.com/about/). If you were to attempt to request this URL through CloudFront, CloudFront would do a S3 GetObject API call against a key that does not exist.
+https://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html
 
-There is a solution
+Create an S3 bucket, configure as a website and make it world readable
 
-[Implementing Default Directory Indexes in Amazon S3-backed Amazon CloudFront Origins Using Lambda@Edge](https://aws.amazon.com/blogs/compute/implementing-default-directory-indexes-in-amazon-s3-backed-amazon-cloudfront-origins-using-lambdaedge/)
+Oddly here Amazon tell you to make it world readable - and warn you that you shoudln't. Ignore the warning.
 
-But I decided for now at least to simply use the [Ugly URLs](https://gohugo.io/content-management/urls/#ugly-urls) setting in Hugo to avoid using directory indexes.
 
-I don't find .html on urls to be that ugly and it was a quick way to get things working. The downside is that if I carnage my mind a static site doesn't give an obvious way to add redirects.
+
+
+Finally publish to S3
+
+`aws s3 cp ./public/ s3://seanburlington --recursive`
+
+Now visit the site
+
+
