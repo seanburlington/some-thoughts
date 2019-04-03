@@ -35,7 +35,7 @@ I booted off a USB stick - I'm not sure if this was needed.
 
 I then ran the following
 
-{{< highlight bash >}}
+```
 # install tools needed onto live system
 sudo apt-get update && sudo apt-get install lvm2 cryptsetup
 sudo modprobe dm-crypt
@@ -59,7 +59,7 @@ sudo lvreduce -L 220g /dev/mapper/ubuntu--vg-root
 # extend the swap volume
 sudo lvextend -l 100%FREE  /dev/mapper/ubuntu--vg-swap_1
 
-{{< / highlight >}}
+```
 
 I rebooted and all was fine except my swap wasn't any bigger
 
@@ -67,11 +67,11 @@ I had forgotten to increase the swap partition to fill the bigger volume
 
 This just required turning swap off, running mkswap on the whole device and turning it back on.
 
-{{< highlight bash >}}
+```
 sudo swapoff
 mkswap /dev/mapper/ubuntu--vg-swap_1 
 swapon
-{{< / highlight >}}
+```
 
 Now hopefully when I run out of RAM my system may slow down but will still be usable.
 

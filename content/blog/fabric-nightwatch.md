@@ -22,7 +22,7 @@ Though I've tried to build html reports from the nightwatch output and so far ha
 
 
 
-{{< highlight python >}}
+```
 
 
 from __future__ import with_statement
@@ -60,4 +60,4 @@ def nightwatch():
        get(code_dir + '/reports/', './')
     run("echo 'This only runs if tests pass'")
 
-{{< / highlight >}}
+```
