@@ -1,6 +1,7 @@
 ---
 title: "AWS CloudFront - limitations"
 date: 2019-01-15T12:01:51Z
+archives: "2022"
 draft: False
 tags:
  - note-to-self

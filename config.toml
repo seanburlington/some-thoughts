@@ -1,7 +1,7 @@
 baseURL = "http://sean.burlington.me.uk/"
 languageCode = "en-gb"
 title = "Some thoughts"
-theme = "ananke"
+theme = "jeffprod"
 uglyurls = true
 
 [params]
