@@ -1,0 +1,19 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f0f2f4;
+}
+.hero-body {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer a {
+  color: white;
+}
+
+footer div p a:hover {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Archives</h1>
+        {{ range $name, $taxonomy := .Site.Taxonomies.archives }}
+        <span class="tag"><a href="{{ "archives" | absURL }}/{{ $name | urlize }}.html">{{ $name }}</a></span>
+    {{ end }}
+        {{ range (where .Site.RegularPages "Section" "post").GroupByDate "2006" }}
+            <a href="{{ "archives" | absURL }}/{{ .Key }}.html">{{ .Key }}</a> ({{ len .Pages }})<br>
+        {{ end }}
+    </div>
+</div>

@@ -1,7 +1,7 @@
-baseURL = "http://sean.burlington.me.uk/"
+baseURL = "https://sean.burlington.me.uk/"
 languageCode = "en-gb"
 title = "Some thoughts"
-theme = "jeffprod"
+theme = "sean"
 uglyurls = true
 
 [params]
