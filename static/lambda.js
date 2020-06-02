@@ -15,7 +15,7 @@ exports.handler = (event, context, callback) => {
     {
       key: "Content-Security-Policy",
       value:
-        "default-src 'none'; img-src 'self'; script-src 'self'  ; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';",
+        "default-src 'none'; img-src 'self'; script-src 'self'  ; style-src 'self'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'none';",
     },
   ];
   headers["x-content-type-options"] = [
