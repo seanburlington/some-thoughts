@@ -2,8 +2,11 @@
 title: "Setting Up Gatsby"
 date: 2019-01-10T20:20:16Z
 draft: False
+tags:
+  - gatsby
+  - static-site-generator
+  - javascript
 ---
-
 
 I tried Gatsby and decided it wasn't for me - but in case I want to revisit it - here's what I did.
 
@@ -13,7 +16,7 @@ Install NVM https://github.com/creationix/nvm#installation
 
 NB I don't like running curl | bash so I download the script review it and then run it - that way I can sanity check that it does what I expect
 
-use nvm to install a reecent version of node
+use nvm to install a recent version of node
 
 `nvm install 10`
 
@@ -43,10 +46,8 @@ Create a production build.
 
 `gatsby build`
 
-I tested these via a local apache but you can also serve via gatsby using 
+I tested these via a local Apache but you can also serve via Gatsby using
 
 `gatsby serve`
 
 When happy push to production.
-
-

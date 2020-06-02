@@ -5,7 +5,9 @@ tags: [CSP, Hugo, Headers]
 draft: False
 ---
 
-If you use CSP headers to add security to your website and you use Hugo with Syntax highlighting you may run into a problem in that by default hugo generates nline styles.
+If you use [CSP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) to add security to your website and you use [Hugo](https://gohugo.io/) with Syntax highlighting you may run into a problem in that by default [Hugo](https://gohugo.io/) generates inline styles.
+
+<!--more-->
 
 That is html like
 
@@ -21,7 +23,7 @@ That is html like
 
 A good Content Security Policy will not allow this - and while you can workaround it by allowing 'unsafe-inline' this (the clue is in the name) is unsafe.
 
-To avoid this configure hugo to use classes for syntax highliting and generate a CSS file for it
+To avoid this configure Hugo to use classes for syntax highlighting and generate a CSS file for it
 
 https://gohugo.io/getting-started/configuration-markup#highlight
 
@@ -41,8 +43,7 @@ include this css file in your theme and you have highlighting without inline sty
 It should look like this
 
 ```html
-<span class="p">];</span>
-<span class="nx">headers</span><span class="p">[</span
+<span class="p">];</span> <span class="nx">headers</span><span class="p">[</span
 ><span class="s2">&#34;referrer-policy&#34;</span><span class="p">]</span>
 <span class="o">=</span> <span class="p">[</span> <span class="p">{</span>
 <span class="nx">key</span><span class="o">:</span>

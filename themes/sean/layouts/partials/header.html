@@ -11,20 +11,19 @@
   rel="stylesheet" href="{{ "css/blog.css" | absURL }}" /> <link
   rel="stylesheet" href="{{ "css/css-family-open-sans.css" | absURL }}" /> <link
   rel="stylesheet" href="{{ "css/bulma.min.css" | absURL }}" />
-  {{ if .RSSLink }} 
   <link
-    href="{{ .RSSLink }}"
+    href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
     rel="alternate"
     type="application/rss+xml"
     title="{{ .Site.Title }}"
   />
   <link
-    href="{{ .RSSLink }}"
+    href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
     rel="feed"
     type="application/rss+xml"
     title="{{ .Site.Title }}"
   />
-  {{ end }}
+ 
 </head>
 <body>
   <!-- hero -->

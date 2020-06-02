@@ -12,6 +12,8 @@ Of course the lockdown is bad for business - but it's better than (more) mass de
 
 Unlocking early only means we can have no confidence in our trajectory - we may well see a rise in infections, NHS overwhelmed again, and we go back to square one.
 
+<!--more-->
+
 Meanwhile businesses that bought stock and tried to start up again have to close and have burned more reserves.
 
 Better to wait a bit till cases are lower, test & trace is operational - and we can manage outbreaks effectively.

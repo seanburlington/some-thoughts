@@ -2,7 +2,7 @@
 title: "Test and Trace Scams"
 date: 2020-06-01T21:55:04+01:00
 archives: "2020"
-tags: [coronaviris, scam, infosec]
+tags: [coronavirus, scam, infosec]
 draft: False
 ---
 
@@ -11,6 +11,8 @@ A [very good question](https://www.gloucestershirelive.co.uk/news/gloucester-new
 John from Gloucester asked: "If I receive a call from someone who says they are from the test and trace scheme telling me to self isolate, how can I confirm that the call is genuine and not from someone acting from ulterior motives?"
 
 The answer given by Dr Jenny Harries does not correctly represent modern information security issues.
+
+<!--more-->
 
 "It is highly unlikely you will be contacted inappropriately."
 

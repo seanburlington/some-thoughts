@@ -16,6 +16,8 @@ Too often security is an added extra and can't be properly implement because it 
 
 Amazon have a [good tutorial](https://aws.amazon.com/blogs/networking-and-content-delivery/adding-http-security-headers-using-lambdaedge-and-amazon-cloudfront/)
 
+<!--more-->
+
 My Lamda function is
 
 ```js
@@ -55,7 +57,7 @@ exports.handler = (event, context, callback) => {
 };
 ```
 
-I also set these headers in a local apache instance to be able to check locally
+I also set these headers in a local Apache instance to be able to check locally
 
 Apache Conf
 
