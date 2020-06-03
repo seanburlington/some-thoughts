@@ -1,8 +1,8 @@
 ---
-title: "Coronovirus vs Economy : No Conflict"
+title: "Coronavirus vs Economy : No Conflict"
 date: 2020-06-01T21:53:31+01:00
 archives: "2020"
-tags: [coronovirus, economy]
+tags: [coronavirus, economy]
 draft: False
 ---
 
