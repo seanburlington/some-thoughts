@@ -1,21 +1,28 @@
 {{ define "main" }}
 
-<div class="columns">
-    <div class="column is-9">
-        <div class="tile is-child box">
+<div class="row mb-3">
+    <article class="col-md-8">
+        <div class="container shadow p-3 my-3  rounded">        
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Date.Format "1 January 2006" }} </p>
+            <p>Tags: </p>
+            <ul class="tags">
+                 {{ range $name := .Params.tags }}
+                    <li class="tag"><a href="{{ "tags" | absURL }}/{{ $name | urlize }}.html">{{ $name }}</a></li>
+                {{ end }}
+            </ul>    
+            
             <div class="content">
                  {{ .Content }}
             </div>
         </div>
-    </div>
-    <div class="column is-3">
-        
-        {{ partial "widget-article-tags.html" . }}<br>
-        {{ partial "widget-related.html" . }}<br>
-        {{ partial "widget-recent.html" . }}<br>
-    
-        
-    </div>
+    </article>
+
+    <nav  class="col-md-4 px-2"  aria-labelledby="menulabel">
+        <div >       
+            {{ partial "widget-recent.html" . }}
+        </div>
+    </nav>
 </div>
 
 {{ end }}

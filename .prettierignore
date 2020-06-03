@@ -1,0 +1,2 @@
+# prettier fails on hugo html/template files https://github.com/prettier/prettier/issues/6034
+*.html

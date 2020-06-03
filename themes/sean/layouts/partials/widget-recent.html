@@ -1,10 +1,12 @@
-<div class="card">
-    <div class="card-content">
-        <h1 class="title is-5">Recent posts</h1>
+<div class="shadow p-3 my-3 bg-white rounded">
+    <h2 id="menulabel">Recent posts</h2>
+        <ul>
         {{ range first 5 (where .Site.RegularPages "Section" "post").ByPublishDate.Reverse }}
-            <h1><a href="{{ .Permalink | absURL }}">{{ .Title }}</a></h1>
-            <time class="has-text-grey-light is-size-7">{{ .Date.Day }} {{ .Date.Month }} {{ .Date.Year }}</time>
+            <li><p>
+                <a href="{{ .Permalink | absURL }}">{{ .Title }}</a><br />
+               {{ .Date.Day }} {{ .Date.Month }} {{ .Date.Year }}
+            </p></li>
         {{ end }}
-    </div>
+        </ul>
 </div>
     

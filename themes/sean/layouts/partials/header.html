@@ -1,16 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ "css/bootstrap-4.5.0.min.css" | absURL }}" /> 
+    
+    
+
   <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="{{ "css/css-family-open-sans.css" | absURL }}" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" /> <link
-  rel="stylesheet" href="{{ "css/blog.css" | absURL }}" /> <link
-  rel="stylesheet" href="{{ "css/css-family-open-sans.css" | absURL }}" /> <link
-  rel="stylesheet" href="{{ "css/bulma.min.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" /> 
+  <link rel="stylesheet" href="{{ "css/blog.css" | absURL }}" /> 
+  
   <link
     href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
     rel="alternate"
@@ -26,27 +31,10 @@
  
 </head>
 <body>
-  <!-- hero -->
-  <section class="hero is-info is-medium">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <br />
-        <h1 class="title is-size-1">
-          <a class="navbar-item" href="{{ .Site.BaseURL | absURL }}"
-            >Some Thoughts</a
-          >
-        </h1>
-      </div>
+  
+  <header>
+    <div class="container">
+      <h1><a href="{{ .Site.BaseURL | absURL }}">Some Thoughts</a></h1>
     </div>
-  </section>
+  </header>
 
-  <div class="container has-text-centered">
-    <br />
-    <h2 class="title is-size-1">
-      {{ if eq .Type "tags" }} #{{ .Title }} {{ else if eq .Type "archives" }}
-      Archive {{ .Title }} {{ else }} {{ .Title }} {{ end }}
-    </h2>
-    {{ if eq .Type "article" }} {{ .Date.Format "January 2, 2006" }}
-    &middot;&nbsp;{{ .ReadingTime }} min read {{ end }}
-  </div>
-</body>
