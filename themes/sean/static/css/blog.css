@@ -12,6 +12,12 @@ a {
   color: #0077cc;
 }
 
+blockquote {
+  border-left: 2px solid lightgrey;
+  padding-left: 2rem;
+  font-style: italic;
+}
+
 header {
   background-image: url("/img/20200404_104524.jpg");
   background-position-x: 50%;
