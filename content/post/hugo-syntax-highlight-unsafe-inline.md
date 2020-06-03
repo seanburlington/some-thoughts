@@ -5,7 +5,7 @@ tags: [CSP, Hugo, Headers]
 draft: False
 ---
 
-If you use [CSP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) to add security to your website and you use [Hugo](https://gohugo.io/) with Syntax highlighting you may run into a problem in that by default [Hugo](https://gohugo.io/) generates inline styles.
+If you use [CSP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) to add security to your website and you use [Hugo](https://gohugo.io/) with Syntax highlighting you may run into a problem in that by default Hugo generates inline styles.
 
 <!--more-->
 
