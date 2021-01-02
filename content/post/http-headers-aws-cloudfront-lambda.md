@@ -18,7 +18,7 @@ Amazon have a [good tutorial](https://aws.amazon.com/blogs/networking-and-conten
 
 <!--more-->
 
-My Lamda function is
+My Lambda function is
 
 ```js
 "use strict";
