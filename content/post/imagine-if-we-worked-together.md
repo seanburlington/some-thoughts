@@ -56,7 +56,7 @@ Not only do I care about those kids - but in school they are all in it together 
 
 What affects your kids affects my kid, what affects mine affects yours.
 
-This isn't /nearly over/ though we all wish it was.
+This isn't _nearly over_ though we all wish it was.
 
 The virus is not beaten yet - it will take time and there could be setbacks.
 
