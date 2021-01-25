@@ -38,7 +38,7 @@ Some schools have setup collaboration tools for classes - but many kids are havi
 
 Sometimes it feels to me like we have the worst possible combination of the old and the new.
 
-## Can't we bring out the best of established teaching methogs and new tech?.
+## Can't we bring out the best of established teaching methods and new tech?.
 
 The best teachers working with the best technologists to create a common resource of online lessons - with automated marking of work. A resource that can be built on over time, re-used and adapted as needed. Doing what IT can do best - freeing people from repetitive work to allow more time for the human, creative stuff.
 
