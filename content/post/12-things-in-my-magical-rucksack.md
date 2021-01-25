@@ -18,6 +18,8 @@ a razor sharp knife and a cloak of fire,
 
 500 fossils of ice,
 
+<!--more-->
+
 a colossal thorny bush which spurts honey from it’s spikes,
 
 infinite honeysuckles to suck on,

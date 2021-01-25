@@ -12,6 +12,8 @@ We are all so very tired in the country of the death count, of lockdowns, of hom
 
 We are not all in the same situation.
 
+<!--more-->
+
 Some are in crowded families with no space and no IT.
 
 Some have plenty of space and all the resources they need.
