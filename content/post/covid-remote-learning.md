@@ -1,5 +1,5 @@
 ---
-title: "My Vision for Open Education"
+title: "On Covid Remote Learning"
 date: 2021-01-27T15:35:34Z
 draft: false
 tags:
