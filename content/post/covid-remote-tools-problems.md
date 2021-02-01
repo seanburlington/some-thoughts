@@ -20,6 +20,8 @@ In the current circumstances it seems like we cannot avoid failing our children 
 
 I think it's worth flagging up some compromises that have been made (even if only for the sake of clarifying my own thoughts).
 
+<!--more-->
+
 These issues are less serious than the consequences of fully open schools; but important matters have been let go.
 
 The following is based only on my experience.
