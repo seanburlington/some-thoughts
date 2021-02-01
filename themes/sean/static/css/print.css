@@ -28,6 +28,6 @@ div.shadow {
   box-shadow: none !important;
 }
 
-a::after {
+div.content a::after {
   content: " ( " attr(href) " ) ";
 }
