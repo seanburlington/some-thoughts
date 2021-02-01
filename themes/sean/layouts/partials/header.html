@@ -15,7 +15,8 @@
 
   <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" /> 
   <link rel="stylesheet" href="{{ "css/blog.css" | absURL }}" /> 
-  
+  <link rel="stylesheet" media="print" href="{{ "css/print.css" | absURL }}">
+
   <link
     href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}"
     rel="alternate"

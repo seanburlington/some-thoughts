@@ -1,0 +1,33 @@
+nav,
+div.tags {
+  display: none;
+}
+
+header,
+footer {
+  color: black;
+  background-image: none;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+header h1 a:not(.btn) {
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+}
+
+a:not(.btn) {
+  text-decoration: none;
+}
+
+main.shadow,
+div.shadow {
+  box-shadow: none !important;
+}
+
+a::after {
+  content: " ( " attr(href) " ) ";
+}
