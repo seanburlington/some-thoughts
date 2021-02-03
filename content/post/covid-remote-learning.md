@@ -21,7 +21,7 @@ Based on my experiences of Open Source Software and related projects and of seei
 
 Firstly I sympathise with the move to use the established big-tech systems. However I don't think this is a good long term solution. It also fails to offer our children the data protection and privacy they have a right to.
 
-We do have some things: the BBC and https://classroom.thenational.academy/ are useful.
+We do have some things: the BBC and [The National Academy][nationalacademy] are useful.
 
 But they don't seem to me to be easy to integrate into a school system - where you can track a child's progress, see who needs help.
 
@@ -33,13 +33,13 @@ I have worked for 20+ years in the world of open source content. I can copy the 
 
 Sometimes people take a project and make big changes to it and share this publicly as a "fork" - people who want to use this software can usually get an idea of the different forks and decide which to use.
 
-This is mostly managed through a piece of software called "git" and a website https://github.com
+This is mostly managed through a piece of software called "git" and a website called [Github][github]
 
 ## Education Resources
 
 This is the bit where I remind you I am an outsider - this is just what I see from where I am - I know I don't see the whole picture and welcome feedback.
 
-I see a lot of stuff used in class comes from https://www.twinkl.co.uk/ , some from books, some is original content by class teachers, some maybe from places like the BBC.
+I see a lot of stuff used in class comes from [twinkl][] , some from books, some is original content by class teachers, some from places like the BBC.
 
 Most of it seems to be in PDF format, some PowerPoint, or other office document formats.
 
@@ -51,14 +51,13 @@ I've been wondering why schools seem to have jumped on to Microsoft Teams and Go
 
 At least Classroom use Google forms so quizzes can be set and provide some instant, automated feedback.
 
-I know there are Open source educational tools such as https://moodle.org/ which offer much more in the way of reusable courses, and progress tracking.
+I know there are Open source educational tools such as [moodle][] which offer much more in the way of reusable courses, and progress tracking.
 
 There are also a number of places to look for open education content
 
-- https://open.ed.ac.uk/oer-channels/
-- https://libguides.ioe.ac.uk/c.php?g=482297&p=3298475
-- https://open.ed.ac.uk/oer-channels/
-- https://www.oercommons.org/browse?f.sublevel=lower-primary
+- [Open.Ed OER Channels][opened]
+- [Institute of Education Primary OER][institute]
+- [OER Commons Primary][oercommons]
 
 But this seems to be something where a teacher would need to trawl through many sites, to find individual resources for individual lessons.
 
@@ -66,7 +65,7 @@ It isn't always clear what the license is on the content, and often it is provid
 
 ## Open Formats
 
-There is [SCORM](https://en.wikipedia.org/wiki/Sharable_Content_Object_Reference_Model) which seems to be an older standard allowing an educational
+There is [SCORM][] which seems to be an older standard allowing an educational
 
 ## What we should have.
 
@@ -85,3 +84,12 @@ None of this would impose anything on schools but would offer them options which
 Sadly I don't think this will happen anytime soon as most people seem to be focussed only on getting through the next few weeks under the assumption that normal life will then return.
 
 Personally - I'd prefer to put some effort into a backup plan now like we should have done a year ago.
+
+[nationalacademy]: https://classroom.thenational.academy/}
+[github]: https://github.com
+[twinkl]: https://www.twinkl.co.uk/
+[moodle]: https://moodle.org/
+[opened]: https://open.ed.ac.uk/oer-channels/
+[institute]: https://libguides.ioe.ac.uk/c.php?g=482297&p=3298475
+[oercommons]: https://www.oercommons.org/browse?f.sublevel=lower-primary
+[scorm]: https://en.wikipedia.org/wiki/Sharable_Content_Object_Reference_Model
