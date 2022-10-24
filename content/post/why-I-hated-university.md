@@ -1,7 +1,7 @@
 ---
 title: "Why I Hated University"
 date: 2022-01-19T21:30:19Z
-draft: False
+draft: true
 tags:
  - Education
  - Reflection
